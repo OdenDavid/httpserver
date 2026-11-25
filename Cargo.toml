@@ -1,0 +1,14 @@
+[package]
+name = "rustserver"
+version = "0.1.0"
+edition = "2024"
+description = "A server built from raw TCP connections with the standard library only. V1: one connection at a time."
+rust-version = "1.85"
+
+[dependencies]
+# None. V1 is the standard library and nothing else, deliberately: the subject of this
+# version is the socket, not the crates around it.
+
+[profile.release]
+# Debug symbols in release builds, so a profiler has something to read.
+debug = true
