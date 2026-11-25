@@ -22,3 +22,7 @@ rustc-ice-*.txt
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Version notes (docs/V1.md, docs/V2.md, …) stay local. The published repo carries the
+# code and README.md only.
+/docs/

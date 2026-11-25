@@ -5,7 +5,6 @@ Goal: Build a working HTTP server from raw TCP connections using Rust's standard
 
 **Status: V1 — a TCP server, one connection at a time.** It speaks TCP, not HTTP yet, and it
 is an educational implementation rather than something to expose to the internet.
-Companion notes: [`docs/V1.md`](docs/V1.md).
 
 ```console
 $ cargo run
@@ -67,10 +66,10 @@ over a socket, and check its transcript.
 
 ## Versions
 
-| version | what it added | notes |
-| --- | --- | --- |
-| v1 | the socket: bind, accept, read once, print, answer, close | [`docs/V1.md`](docs/V1.md) |
-| v2 | HTTP: parse a request, answer with a real response | planned |
+| version | what it added |
+| --- | --- |
+| v1 | the socket: bind, accept, read once, print, answer, close |
+| v2 | HTTP: parse a request, answer with a real response (planned) |
 
 The rule carried over from the first project: each version works, has tests, and is written
 down before the next one starts.
